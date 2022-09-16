@@ -12,7 +12,7 @@ export default function App() {
         <footer>
           This project was coded by Olesia Libra and is {''}
           <a
-            href="https://github.com/"
+            href="https://github.com/Solymar1388/weather-react-lessons"
             target="_blank"
             rel="noopener noreferrer"
           >

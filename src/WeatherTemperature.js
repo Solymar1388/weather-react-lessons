@@ -19,19 +19,22 @@ function fahrenheit(){
 
 if (unit === 'celsius') {
 return (
-<div className="WeatherTemperature">
-<span className="temperature">{Math.round(props.celsius)}</span>
-<span className="unit">
-    °C |{" "}<a href="/" onClick={showFahrenheit}>°F</a>
-</span>
-</div>
+  <div className="WeatherTemperature">
+    <span className="temperature">{Math.round(props.celsius)}</span>
+    <span className="unit">
+      °C |{' '}
+      <a href="/" onClick={showFahrenheit} className="text-decoration-none">
+        °F
+      </a>
+    </span>
+  </div>
 );
 } else {
 return (
   <div className="WeatherTemperature">
     <span className="temperature">{Math.round(fahrenheit())}</span>
     <span className="unit">
-      <a href="/" onClick={showCelsius}>
+      <a href="/" onClick={showCelsius} className="text-decoration-none">
         °C
       </a>{' '}
       | °F
