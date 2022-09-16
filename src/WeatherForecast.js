@@ -44,7 +44,7 @@ return (
 
     } else {
         
-let apiKey = 'ce41b28ce42cc32953b2215b8a1bd7b5';
+let apiKey = '4c9b53e4f8f5eb00df5915bdca340605';
 let longitude = props.coordinates.lon;
 let latitude = props.coordinates.lat;
 let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
