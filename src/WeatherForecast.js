@@ -32,6 +32,9 @@ function handleResponse(response){
                                         />
                                       </div>
                                     );}
+                                    else {
+                                        return null
+                                    }
                     
                 })}
               
