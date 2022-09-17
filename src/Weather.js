@@ -6,6 +6,7 @@ import "./Weather.css"
 import axios from "axios"
 
 export default function Weather(props){
+  const [unit, setUnit] = useState('celsius');
 const [weatherData, setWeatherData] = useState({ready: false})
 const [city, setCity] = useState(props.defaultCity)
 function handleResponse(response) {
@@ -60,17 +61,12 @@ return (
         </div>
       </div>
     </form>
-    <WeatherInfo data={weatherData} />
-    <WeatherForecast coordinates={weatherData.coordinates} />
+    <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit} />
+    <WeatherForecast unit={unit} coordinates={weatherData.coordinates} />
   </div>
 );
 } else {
 search()
-
-return "Loading..."
-}
-
-
-
-
+  return "Loading..."
+  }
 }

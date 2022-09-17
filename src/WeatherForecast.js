@@ -5,6 +5,9 @@ import './WeatherForecast.css';
 import axios from "axios"
 
 export default function WeatherForecast(props){
+
+    const unit = props.unit;
+
 let [loaded, setLoaded] = useState(false)
 let [forecast, setForecast] = useState(null)
 
@@ -26,12 +29,13 @@ return (
     <div className="row">
         {forecast.map(function(dailyForecast, index) {
             if (index < 5) {return (
-            <div className="col" key={index}>
-            <WeatherForecastDay
-                data={dailyForecast}
-            />
-            </div>
-            );}
+                            <div className="col" key={index}>
+                            <WeatherForecastDay
+                                unit={unit}
+                                data={dailyForecast}
+                            />
+                            </div>
+                        );}
             else {
                 return null
             }
