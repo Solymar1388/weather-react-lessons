@@ -20,7 +20,7 @@ return (
       <div className="col-6">
         <div className="d-flex">
           <div>
-            <WeatherIcon code={props.data.icon} size={52} />
+            <WeatherIcon code={props.data.icon} size={60} color="#8064e9" />
           </div>
           <div>
             <WeatherTemperature

@@ -62,6 +62,7 @@ return (
       </div>
     </form>
     <WeatherInfo data={weatherData} unit={unit} setUnit={setUnit} />
+    <hr/>
     <WeatherForecast unit={unit} coordinates={weatherData.coordinates} />
   </div>
 );

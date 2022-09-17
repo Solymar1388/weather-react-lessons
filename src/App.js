@@ -9,7 +9,7 @@ export default function App() {
     <div className="App">
       <div className="container">
         <Weather defaultCity="Kyiv" />
-        <footer>
+        <footer className="text-center">
           This project was coded by Olesia Libra and is {''}
           <a
             href="https://github.com/Solymar1388/weather-react-lessons"
