@@ -43,7 +43,7 @@ return (
   <div className="Weather">
     <form onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-9">
+        <div className="col-8">
           <input
             type="search"
             placeholder="Enter a city..."
@@ -52,7 +52,7 @@ return (
             onChange={handleCityChange}
           />
         </div>
-        <div className="col-3">
+        <div className="col-4">
           <input
             type="submit"
             value="search"
