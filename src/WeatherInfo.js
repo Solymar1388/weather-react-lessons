@@ -31,7 +31,7 @@ return (
           </div>
         </div>
       </div>
-      <div className="col-6 d-flex flex-column">
+      <div className="col-6 d-flex flex-column justify-content-center">
         <ul className="">
           <li>Humidity: {props.data.humidity} %</li>
           <li>Wind: {Math.round(props.data.wind)} km/h</li>
