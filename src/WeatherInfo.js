@@ -8,7 +8,7 @@ export default function WeatherInfo(props){
   const setUnit = props.setUnit;
 
 return (
-  <div className="WeatherInfo">
+    <div className="WeatherInfo">
     <h1>{props.data.city}</h1>
     <ul>
       <li>
@@ -18,11 +18,11 @@ return (
     </ul>
     <div className="row mt-3">
       <div className="col-6">
-        <div className="d-flex">
+        <div className="d-flex flex-wrap justify-content-center">
           <div>
-            <WeatherIcon code={props.data.icon} size={60} color="#8064e9" />
+            <WeatherIcon code={props.data.icon} size={50} color="#8064e9" />
           </div>
-          <div>
+          <div className="d-flex flex-wrap">
             <WeatherTemperature
               unit={unit}
               setUnit={setUnit}
@@ -31,8 +31,8 @@ return (
           </div>
         </div>
       </div>
-      <div className="col-6">
-        <ul>
+      <div className="col-6 d-flex flex-column">
+        <ul className="">
           <li>Humidity: {props.data.humidity} %</li>
           <li>Wind: {Math.round(props.data.wind)} km/h</li>
         </ul>
